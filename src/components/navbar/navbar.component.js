@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-import Container from '../container/container.component'
 import { Link } from 'react-router-dom'
+import Container from '../container/container.component'
 import NavbarToggle from './navbar.toggle.component'
 
 const Navbar = () => {
-  // Toggle State
+  // implent toggle state
   const [active, setActive] = useState(false)
-  // Toggle Controller
+  // toggle Controller
   const menuState = () => {
     setActive(!active)
   }

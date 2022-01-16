@@ -29,3 +29,22 @@
 .menu-icon__bar:nth-child(3) {
     bottom: 0;
 }
+
+.menu-icon--isActive .menu-icon__bar {
+    transition: opacity 0s var(--timing-animation), top var(--timing-animation), bottom var(--timing-animation), transform var(--timing-animation) var(--timing-animation);
+
+}
+
+.menu-icon--isActive .menu-icon__bar:nth-child(1) {
+    transform: rotate(45deg);
+    top: calc(50% - calc(var(--bar-height)/ 2));
+}
+
+.menu-icon--isActive .menu-icon__bar:nth-child(3) {
+    transform: rotate(-45deg);
+    bottom: calc(50% - calc(var(--bar-height)/ 2));
+}
+
+.menu-icon--isActive .menu-icon__bar:nth-child(2) {
+    opacity: 0;
+}  

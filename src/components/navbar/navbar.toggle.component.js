@@ -1,8 +1,8 @@
 import React from 'react'
-
+import './navbar.css'
 const NavbarToggle = ({ active, menuState }) => {
   return (
-    <div className="block md:hidden">
+    <div className="block md:hidden ">
       <button
         className={`focus:outline-none menu-icon ${
           active ? 'menu-icon--isActive' : ''
