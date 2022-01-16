@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Container from '../container/container.component'
 import { Link } from 'react-router-dom'
+import NavbarToggle from './navbar.toggle.component'
 
 const Navbar = () => {
+  // Toggle State
+  const [active, setActive] = useState(false)
+  // Toggle Controller
+  const menuState = () => {
+    setActive(!active)
+  }
   return (
     <Container>
       <nav className="navbar">
@@ -11,7 +18,11 @@ const Navbar = () => {
           <Link to="/" className="logo w-16 animate">
             <div>Logo</div>
           </Link>
+          <NavbarToggle active={active} menuState={menuState} />
         </div>
+
+        {/* Right Side */}
+        <div className={`${active ? 'flex' : 'hidden'} md:flex`}></div>
       </nav>
     </Container>
   )
