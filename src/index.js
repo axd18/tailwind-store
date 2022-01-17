@@ -5,6 +5,7 @@ import './assets/main.css'
 
 // Router
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { Switch } from '@headlessui/react'
 
 // Redux
 import { Provider } from 'react-redux'
@@ -17,9 +18,11 @@ ReactDOM.render(
   <Provider store={store}>
     <Router>
       <Navbar />
-      <Routes>
-        <Route exact path="/" component={App} />
-      </Routes>
+      <Switch>
+        <Routes>
+          <Route exact path="/#" component={App} />
+        </Routes>
+      </Switch>
     </Router>
     <App />
   </Provider>,
