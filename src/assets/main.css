@@ -445,7 +445,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px) {
-    .navbar {
+  .navbar {
     flex-direction: row;
   }
 }
