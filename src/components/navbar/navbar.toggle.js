@@ -6,7 +6,7 @@ const NavbarToggle = ({ active, menuState }) => {
       <button
         className={`focus:outline-none menu-icon ${
           active ? 'menu-icon--isActive' : ''
-        } ml-4 self-end cursor-pointer `}
+        } ml-4 self-center cursor-pointer `}
         onClick={menuState}
       >
         <div className="menu-icon__bar"></div>
