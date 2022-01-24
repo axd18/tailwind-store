@@ -1,14 +1,14 @@
 import React from 'react'
-import { Provider } from 'react-redux'
-import store from './data/store'
-import Routes from './routes'
+
+import Rutas from './routes'
+import Navbar from './components/Navbar'
 
 function App() {
   return (
-    <Provider store={store}>
-      <Routes />
-    </Provider>
+    <>
+      <Navbar />
+      <Rutas />
+    </>
   )
 }
-
 export default App

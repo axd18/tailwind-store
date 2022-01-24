@@ -1,20 +1,21 @@
 import React from 'react'
-import Navbar from './components/navbar/navbar.component'
 import Home from './pages/Home'
+import About from './pages/About'
+import Contact from './pages/Contact'
 
 // Router
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-// import { Switch } from '@headlessui/react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-const mainRoutes = () => {
+const Rutas = () => {
   return (
     <BrowserRouter>
-      <Navbar />
       <Routes>
-        <Route exact path="/#" component={Home} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   )
 }
 
-export default mainRoutes
+export default Rutas
