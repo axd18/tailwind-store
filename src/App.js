@@ -1,10 +1,10 @@
-import Rutas from './routes'
+import Container from './components/container/container.component'
 
 function App() {
   return (
    
       
-      <Rutas />
+      <Container />
     
   )
 }
