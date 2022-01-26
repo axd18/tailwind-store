@@ -24,6 +24,17 @@ const Header = () => {
             />
           </svg>
         </div>
+        <div className='pr-8 hidden md:block'>
+            <Link to="/" className='p-4'>
+                Home
+            </Link>
+            <Link to="/about" className='p-4'>
+                About
+            </Link>
+            <Link to="/contact" className='p-4'>
+                Contact
+            </Link>
+        </div>
       </nav>
     </>
   )
