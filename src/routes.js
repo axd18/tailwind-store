@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
@@ -16,12 +16,25 @@ const Rutas = () => {
   const toggleOpen = () => {
     setIsOpen(!isOpen)
   }
+
+  useEffect(() => {
+    const ocultarMenu = () => {
+      if(window.innerWidth > 768 && isOpen) {
+        setIsOpen(false)
+      }
+    }
+    window.addEventListener("resize", ocultarMenu)
+    return () => {
+      window.removeEventListener("resize", ocultarMenu)
+    };
+  });
+  
   
   return (
     
     <BrowserRouter>
       <Header toggleOpen={toggleOpen}/>
-      {isOpen && <ToggleMenuBar />}
+      {isOpen && <ToggleMenuBar toggleOpenClose={toggleOpen}/>}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

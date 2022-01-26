@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
 
-const ToggleMenuBar = () => {
+const ToggleMenuBar = ({toggleOpenClose}) => {
     return ( 
-        <div className="grid grid-rows-3 text-center items-center bg-purple-800 text-white">
+        <div className="grid grid-rows-3 text-center items-center bg-purple-800 text-white" onClick={toggleOpenClose}>
             <Link to="/" className='p-4'>
                 Home
             </Link>
