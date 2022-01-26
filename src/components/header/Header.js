@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-const Header = () => {
+const Header = ({toggleOpen}) => {
   return (
     <>
       <nav className="flex justify-between items-center h-16 bg-white text-black relative bg-gray-200 shadow-sm">
@@ -8,7 +8,7 @@ const Header = () => {
         <Link to="/about">
           <h1>Logo</h1>
         </Link>
-        <div className="px-4 cursor-pointer md:hidden">
+        <div className="px-4 cursor-pointer md:hidden" onClick={toggleOpen}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"
