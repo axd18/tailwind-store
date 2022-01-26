@@ -1,10 +1,10 @@
-import Rutas from '../../routes'
+
 
 const Container = ({ children }) => {
   return (
       <>
-      <Rutas />
-    <div className="container mx-auto px-4">
+     
+    <div className="container mx-auto">
       {children}
     </div>
     </>

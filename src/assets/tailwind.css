@@ -11,7 +11,7 @@
 }
 
 .navbar {
-  @apply shadow-md flex w-full justify-between items-center bg-white p-3 rounded-md mt-5 flex-col;
+  @apply shadow-md flex w-full justify-between items-center bg-white p-3 mt-5 flex-col;
 }
 
 @media (min-width: 768px) {
