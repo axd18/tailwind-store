@@ -5,8 +5,8 @@ import Searchbar from './searchbar/Searchbar'
 
 const Header = ({ toggleOpen }) => {
   return (
-    <header className="p-4 shadow-sm">
-      <div className=" container block md:flex justify-between">
+    <header className="container mx-auto p-4 shadow-sm ">
+      <div className=" block md:flex ">
         <div className=" container flex md:block justify-between">
           <Link to="/about">
             <h1>Logo</h1>
