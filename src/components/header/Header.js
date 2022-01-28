@@ -13,7 +13,7 @@ const Header = ({ toggleOpen }) => {
           </Link>
 
           <div
-            className="w-8 h-8 cursor-pointer md:hidden"
+            className="w-8 h-8 cursor-pointer md:hidden z-20"
             onClick={toggleOpen}
           >
             <svg
